@@ -1,0 +1,45 @@
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.navbar {
+    background-color: yellowgreen;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .item{
+    height: 100%;
+    width: 15%;
+    background-color: teal;
+    display: block;
+}
+.navbar .item div{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.navbar .item.logo{
+    width: 20%;
+}
+
+.navbar-mobile{
+    background-color: yellowgreen;
+    height: 5rem;
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:800px){
+    .navbar{
+        display: none;
+    }
+    .navbar-mobile{
+        display: flex;
+    }
+}

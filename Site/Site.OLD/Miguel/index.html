@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-PT">
+<head>
+<link rel="logo" href="logo.icon" type="logo/png">
+<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<title>TechWeek2020</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('img.png');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+.topleft {
+  position: absolute;
+  top: 2%;
+  left: 16px;
+  width: 49%;
+}
+
+.topright {
+  position: absolute;
+  top: 5%;
+  right: 16px;
+  width: 45%;
+  
+}
+
+.middle {
+  width: 40%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display:block;
+}
+
+
+
+#demo {
+ padding:1% 4%;
+ background-color: #ec247c;
+ opacity: 0.8;
+ filter: alpha(opacity=50);
+ border-radius: 15px;
+ width: 50%;
+ margin:0 auto;
+}
+
+.no {
+ background-color: #00BCE4;
+ opacity: 0.8;
+ filter: alpha(opacity=50);
+ border-radius: 20px;
+}
+
+.picons {
+  border-radius: 15px;
+  background: #00BCE4; 
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bluel {
+ font-size: 400%
+}
+
+.pinkl {
+font-size: 200%
+}
+
+@media screen and (max-width: 800px) {
+  .bluel, .pinkl, .bgimg {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .bluel, .pinkl, .bgimg {
+    font-size: 100%;
+  }
+}
+.meio {
+	display:flex;
+  text-align: center;
+  width:20%;
+  justify-content:space-evenly;
+  margin:7.5% auto;
+}
+
+</style>
+
+<body>
+
+<div class="bgimg">
+ <div class="topleft">
+  <img class="topleft" src="logo.png" alt="logo">
+ </div>
+ <div class="middle">
+  <div class="no">
+	<h3 style="padding: 4%" class="bluel" >Brevemente</h2>
+  </div>
+  <p id="demo" class="pinkl"></p>
+  <p></p>
+  <div class="meio">
+   <a href ="https://www.instagram.com/epb.pt/"> <img src="insta.png" height="42" width="42" class="picons"></a>
+   <a href ="https://www.instagram.com/epb.pt/"> <img src="fb.png" height="42" width="42" class="picons"></a>
+  </div>
+ </div>
+ 
+</div>
+<div class="topright">
+ <a href="https://www.epb.pt"><img class="topright" img src="EPB.png"></a>
+</div>
+
+
+<script>
+var countDownDate = new Date("Mar 7, 2020 08:00:00").getTime(); //dia final do contador
+
+
+var countdownfunction = setInterval(function() {     // atualizar o contador por segundo
+
+  // Data de hoje
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Calculos do tempo
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s  ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>

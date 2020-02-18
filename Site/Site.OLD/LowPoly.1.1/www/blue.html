@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Tech Week 2020</title>
+		<meta charset="utf-8">
+		<meta name="deion" content="LowPoly - Coming Soon Template from angelostudio.net">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/icomoon/style.css">
+		<link rel="stylesheet" href="css/blue.css" class="colors">
+		<link rel="shortcut icon" href="img/ico/32.png" sizes="32x32" type="image/png"/>
+		<link rel="apple-touch-icon-precomposed" href="img/ico/60.png" type="image/png"/>
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/72.png" type="image/png"/>
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/ico/120.png" type="image/png"/>
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/ico/152.png" type="image/png"/>
+		<!--[if lt IE 9]>
+			< src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></>
+			< src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></>
+		<![endif]-->
+	</head>
+
+	<body id="home">
+		
+		<div id="header">
+		<div class="header-content">
+			<div class="countdown" id="countdown">
+				<div class="container">
+					  <div class="row">
+						<div class="countdown-item col-sm-3 col-xs-3">
+							<div class="countdown-number" id="countdown-days"><p id="dias"></div>
+							<div class="countdown-label">Dias</div>
+						</div>
+
+						<div class="countdown-item col-sm-3 col-xs-3">
+							<div class="countdown-number" id="countdown-hours"><p id="horas"></div>
+							<div class="countdown-label">Horas</div>
+						</div>
+
+						<div class="countdown-item col-sm-3 col-xs-3">
+							<div class="countdown-number" id="countdown-minutes"><p id="minutos"></div>
+							<div class="countdown-label">Minutos</div>
+						</div>
+
+						<div class="countdown-item col-sm-3 col-xs-3">
+							<div class="countdown-number" id="countdown-seconds"><p id="segundos"></div>
+							<div class="countdown-label">Segundos</div>
+						</div>
+					</div>
+				<div class="row">
+					<form id="newsletter-form" action="send.php" method="POST" class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 myform" novalidate>
+						
+						<input type="hidden" name="submitted" id="submitted2" value="true">
+					</form>
+				</div>	
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div>
+						<ul class="social-links text-center">
+							<li><a href="#link"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://pt-pt.facebook.com/epbtechweek/"><i class="icon-facebook"></i></a></li>
+							<li><a href="#link"><i class="icon-googleplus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+
+				<script>	
+var countDownDate = new Date("Apr 23, 2020 08:00:00").getTime(); //dia final do contador
+
+
+var countdownfunction = setInterval(function() {     // atualizar o contador por segundo
+
+  // Data de hoje
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Calculos do tempo
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // id
+  document.getElementById("dias").innerHTML = days ;
+  document.getElementById("horas").innerHTML = hours ;
+  document.getElementById("minutos").innerHTML = minutes ;
+  document.getElementById("segundos").innerHTML = seconds ;
+  
+  // Depois do tempo acabar
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,2 @@
+include ':app', ':scroll'
+rootProject.name='techtech'

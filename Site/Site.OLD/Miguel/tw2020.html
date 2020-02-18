@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-PT">
+<head>
+<link rel="logo" href="logo.icon" type="logo/png">
+<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="slicknav.min.css">
+<title>TechWeek2020</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('blue.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+.me {
+ height: 100%;
+ background-color: rgb(41, 40, 40);
+ position: relative;
+ width: 70%;
+ transform: translate(50%, -49%);
+ top: 49%;
+ right: 20%;
+}
+
+
+
+
+
+
+.inner_main_menu ul{
+ margin: 0; 
+ padding: 0; 
+ ist-style: none;
+ text-align: right;
+}
+
+.inner_main_menu ul li{
+ float: none;
+ display: inline-block;
+}
+
+.inner_main_menu ul li:nth-child(1){float: left;}
+
+.inner_main_menu ul li:nth-child(2){float: left;}
+
+
+
+.inner_main_menu ul li a {
+ color: white;
+ font-size: 20px;
+ text-transform: uppercase;
+ text-decoration: none;
+ display: block;
+ padding: 50px 20px;
+}
+
+.inner_main_menu ul li a:hover{
+ color: 6FDA44
+}
+
+.slicknav_menu {
+ background:  none repeat scroll 0 0;
+ font-size: 100%;
+ display: none;
+ position: fixed;
+ right: 0%;
+ width: 100%;
+ z-index: 99999;
+}
+
+ul.slicknav_nav {
+ background-color: #262626 none repeat scroll 0 0;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 80%;
+}
+
+#main_menu {
+ width: 100%;
+ position: relative;
+}
+
+.logo_area {
+ padding-top: 2%;
+ width: 30%;
+ height: 30%;
+ position: absolute;
+ left: 35%;
+ top: 0;
+ content: "";
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1114px) {
+ .slicknav_menu {display: block;}
+ .inner_main_menu {display: none;}
+}
+
+.texto {
+ width: 61%;
+ height: 30%;
+ position: absolute;
+ left: 23%;
+ bottom: 35%;
+ font-size: 150%;
+ text-align: center;
+
+}
+
+@media only screen and (max-width: 1000px) {
+ .texto {font-size: 90%;}
+ .
+
+</style>
+</head>
+<body>
+
+<div class="bgimg">
+ <div class="me">
+  <div class="logo_area">
+   <a href=""><img src="logo.png" style="width:100%;" alt=""></a>
+  </div>
+  <div class="inner_main_menu">
+   <ul id="menu">
+    <li><a href="">Agenda</a></li>
+    <li><a href="">Arquivo</a></li>
+    <li><a href="">Aplicação</a></li>
+    <li><a href="">Contactos</a></li>
+   </ul>
+  </div>
+  <div class="texto">
+   <p> 
+Uma semana dedicada à tecnologia e informática, cujo objetivo será o contacto que os alunos da escola profissional de braga e convidados irão ter, quer seja por palestras presenteadas por empresas conhecidas, quer seja por workshops realizados ao longo desta semana.
+No dia 27 de março haverá um Workshop em GitHub, e é necessário efetuar inscrição. Esta iniciativa é organizada por dois alunos do curso de GPSI e por duas alunas do curso de Secretariado, com a colaboração dos seus professores e gestores de curso.</p>
+  </div>
+ </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#menu').slicknav();
+});
+</script>
+</body>
+</html>

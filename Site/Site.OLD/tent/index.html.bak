@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-PT">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+<link href="./favicon.ico" rel="favicon">
+<title>TechWeek2020</title>
+<meta charset="UTF-8">
+<style>
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.bgimg {
+  background-image: url('img.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  font-size: 55px;
+ }
+ 
+.bigb {
+  height: 28%;
+  width: 100%;
+  position: relative;
+}
+ 
+.firstb {
+  height: 100%;
+  width: 16%;
+  position: relative;
+  float: left;
+}
+
+.secondb {
+  height: 100%;
+  width: 16%;
+  float: left;
+}
+
+.thirdb {
+  height: 100%;
+  width: 36%;
+  float: left;
+}
+
+.fourthb {
+  height: 100%;
+  width: 16%;
+  background-color: red;
+  float: right;
+}
+
+.fiveb {
+  height: 100%;
+  width: 16%;
+  background-color: powderblue;
+  position: relative;
+  float: right;
+}
+</style>
+</head>
+<body>
+<div class="bgimg">
+ <div class="bigb">
+  <a href="www.google.com">
+   <div class="firstb" href="www.google.com">
+  
+  
+   </div>
+  </a>
+  <a href="www.google.com">
+   <div class="secondb">
+  
+   </div>
+  </a>
+  <a href="www.google.com">
+   <div class="thirdb">
+  
+   </div>
+  </a>
+  <a href="index.html">
+  <div class="fourthb">
+  
+   </div>  
+  </a>
+  <div class="fiveb">
+
+  </div>  
+   
+  
+ </div>
+</div>
+</body>
+</html 

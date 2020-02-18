@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-PT">
+<head>
+<link rel="logo" href="logo.icon" type="logo/png">
+<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+<title>TechWeek2020</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('blue.png');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+.me {
+ height: 100%;
+ background-color: #323232;
+ position: relative;
+ width: 70%;
+ transform: translate(50%, -49%);
+ top: 49%;
+ right: 20%;
+}
+
+
+
+
+
+
+.inner_main_menu ul{
+ margin: 0; 
+ padding: 0; 
+ ist-style: none;
+ text-align: right;
+}
+
+.inner_main_menu ul li{
+ float: none;
+ display: inline-block;
+}
+
+.inner_main_menu ul li:nth-child(1){float: left;}
+
+.inner_main_menu ul li:nth-child(2){float: left;}
+
+
+
+.inner_main_menu ul li a {
+ color: white;
+ font-size: 20px;
+ text-transform: uppercase;
+ text-decoration: none;
+ display: block;
+ padding: 50px 20px;
+}
+
+.inner_main_menu ul li a:hover{
+ color: 6FDA44
+}
+
+#main_menu {
+ width: 100%;
+ position: relative;
+}
+.logo_area {
+ padding-top: 25px;
+ width: 300px;
+ height: 300px;
+ position: absolute;
+ left: 33%;
+ top: 0;
+ content: ""
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bgimg">
+ <div class="me">
+  <div class="logo_area">
+   <a href=""><img src="logo2.png" style="width:100%;" alt=""></a>
+  </div>
+  <div class="inner_main_menu">
+   <ul>
+    <li><a href="">Agenda</a></li>
+    <li><a href="">Arquivo</a></li>
+    <li><a href="">Aplicação</a></li>
+    <li><a href="">Contactos</a></li>
+   </ul>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>

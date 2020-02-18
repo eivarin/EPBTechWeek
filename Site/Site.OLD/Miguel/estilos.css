@@ -1,0 +1,59 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('blue.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+.me {
+ height: 100%;
+ background-color: black;
+ position: relative;
+ width: 70%;
+ transform: translate(50%, -49%);
+ top: 49%;
+ right: 20%;
+}
+
+body {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00BCE4;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ec247c;
+}
+
+.active {
+  background-color: #ec247c;
+}

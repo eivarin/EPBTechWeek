@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------------------------Dives Principais----------------------------*/
+.div-header{
+    background-color: transparent;
+    height: 700px;
+    width: 100%;
+    background-color: red;
+}
+
+
+.div-agenda{
+    background-color: transparent;
+    height: 900px;
+    width: 100%;
+    background-color:blue;
+}
+
+.div-aplicação{
+    background-color: transparent;
+    height: 600px;
+    width: 100%;
+    background-color:orange;
+}
+
+.div-patrocinio{
+    background-color: transparent;
+    height: 400px;
+    width: 100%;
+    background-color:green;
+}
+
+.div-contacto{
+    background-color: transparent;
+    height: 400px;
+    width: 100%;
+    background-color:lightblue;
+}
+
+.div-inftech{
+    background-color: transparent;
+    height: 400px;
+    width: 100%;
+}
+
+
+.divinf-h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 4%;
+}
+
+
+.div-inftech p{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 7%;
+
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------Menu Telemovel------------------------------------------*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 8vh;
+    background-color:transparent;
+}
+
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 50%;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.menu-mobile div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+
+.menu-logo{
+    height: 70px;
+    width: auto;
+    padding: 5px;
+
+}
+
+/*----------------------------------------------------------------------*/
+
+
+
+
+
+@media screen and(max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and(max-width:768px){
+    .nav-links{
+        position: relative;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #1710ff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+}
+
+

@@ -11,10 +11,12 @@ body{
 
 /*---------------------------------------Dives Principais----------------------------*/
 .div-header{
-    background-color: transparent;
-    height: 700px;
+    height: 800px;
     width: 100%;
-    background-color: red;
+    background-image: url(./img/auditorio.jpg);
+    
+    
+    
 }
 
 
@@ -69,6 +71,8 @@ body{
 
 }
 
+
+
 /*----------------------------------------------------------------------------------------------*/
 
 /*--------------------------------------------Menu Telemovel------------------------------------------*/
@@ -78,6 +82,7 @@ nav{
     align-items: center;
     min-width: 8vh;
     background-color:transparent;
+    
 }
 
 
@@ -90,13 +95,13 @@ nav{
 .nav-links a{
     text-decoration: none;
     font-size: 14px;
-    color: black;
+    color: white;
 }
 
 .menu-mobile div{
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #2a2b35;
     margin: 5px;
 }
 
@@ -109,12 +114,28 @@ nav{
     height: 70px;
     width: auto;
     padding: 5px;
-
+    margin-top: 6%;
 }
 
 /*----------------------------------------------------------------------*/
 
+/*------------------------------------Countdown----------------------*/
 
+.display-count{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+.countdown-head{
+    background-color:transparent;
+    height: 100px;
+    width: 100%;
+    margin-top: 35%;
+}
+
+
+/*-----------------------------------------------------------------------------*/
 
 
 
